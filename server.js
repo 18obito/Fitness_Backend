@@ -8,7 +8,7 @@ connectDB();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin: "https://glittery-concha-fc39dd.netlify.app"}));
 
 // Ensure this line is correct
 app.use('/api/auth', require('./routes/authRoutes')); 
